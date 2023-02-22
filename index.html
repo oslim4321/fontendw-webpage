@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>o'slim Webpage</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Remember<span>That</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="open-navigation">
+
+            <nav>
+                
+                <img id="mobile-exit" class="mobile-exit" src="images/exit.svg" alt="close-navigation">
+
+                <ul class="primary-nav">
+                    <a class="current" href="#"><li>Home</li></a>
+                    <a href="#"><li>Features</li></a>
+                    <a href="#"><li>Pricing</li></a>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <a href="#"><li>Contact</li></a>
+                    <a class="go-premium-cta" href="#"><li>Go Premium</li></a>
+                </ul>
+            </nav>
+        </div>
+    </div>
+        <section class="Hero">
+            <div class="container">
+                <div class="left-col">
+                    <p class="Subhead">it'nitty &amp; gritty</p>
+                    <h1>a task that doesn't <br> stink.</h1>
+
+                    <div class="hero-cta">
+                        <div class="container">
+                            <a class="primary-cta" href="#">Try For free</a>
+                            <a href="#" class="watch-video-cta">
+                                <img class="watchs" src="images/watch.svg" alt="watch a watch-video">Watch a video
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <img src="images/illustration.svg" class="hero-img" alt="illustration"> 
+            </div>
+        </section>
+
+        <section class="feature-section">
+            <div class="container">
+                <ul class="features-list">
+                    <li>Unlimited</li>
+                    <li>SmS Task Reminders</li>
+                    <li>Confetti Explosion Upon Task Conpletions</li>
+                    <li>Social Media Announcement</li>
+                    <li>Real Time Collaboration</li>
+                    <li>Other Awesome Features</li>
+                </ul>
+                <img class="holding-phone" src="images/holding-phone.jpg" alt="holding-phone">
+            </div>
+        </section>
+        <section class="testimonial-section">
+            <div class="container">
+                <ul>
+                    <li><img src="images/person.jpg" alt="person">
+                    <blockquote>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</blockquote><cite>joe Done</cite></li>
+                    
+                    <li><img src="images/person.jpg" alt="person">
+                    <blockquote>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</blockquote><cite>joe Done</cite></li>
+
+                    <li><img src="images/person.jpg" alt="person">
+                    <blockquote>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</blockquote><cite>joe Done</cite></li>
+                </ul>
+               
+            </div>
+        </section>
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-left">
+                    <h2>Contact</h2>
+
+                    <form action="">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="oslim toonz">
+
+                        <label for="message">Message</label>
+                        <textarea name="message" id="" cols="30" rows="10"></textarea>
+                        <input type="submit" class="send-message-cta" name="send message" value="Send Message">
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <script>
+            const mobileBtn = document.getElementById('mobile-cta')
+                    nav = document.querySelector('nav')
+                    mobileBtnExit = document.getElementById('mobile-exit');
+
+            mobileBtn.addEventListener('click', () => {
+               nav.classList.add('menu-btn');
+            })
+
+            mobileBtnExit.addEventListener('click', () => {
+               nav.classList.remove('menu-btn');
+            })
+        </script>
+    
+</body>
+</html>
